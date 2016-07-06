@@ -1,0 +1,32 @@
+@media only all and  (max-width: 940px) {
+    .b-logo__img_left-top {
+         width: 450px;
+    }
+
+    .b-logo__img_right-bottom {
+        width: 200px;
+    }
+    .b-page__section_head {
+        padding-top: 20px;
+        padding-bottom:50px;
+    }
+    .b-page__section_advertising{
+        padding:60px 0;
+    }
+    .b-feauters__feature{
+        padding:20px 15px;
+    }
+    .b-description__text {
+        margin-bottom: 20px;
+    }
+    .b-advertising_wrapper .b-advertising__text{
+        font-size: 30px;
+        margin-bottom: 1em;
+    }
+    .b-advertising_wrapper .b-advertising__button{
+        font-size: 20px;
+        padding: 3px 15px;
+    }
+
+
+}
