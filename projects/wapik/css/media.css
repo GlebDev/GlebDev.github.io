@@ -1,0 +1,31 @@
+@media only all and  (max-width: 990px) {
+.section {
+    padding: 50px 0;
+    }
+    .section.about .separator {
+   display: none;
+}
+.section.description-1 .hand-image img {
+    width: 350px;
+}
+    .section.description-1 aside.features {
+padding-top: 0px;
+}
+    .section.description-1 aside.features .heading{
+text-align: center;
+}
+    .section.pricing .list {
+    padding: 20px 50px 20px 50px;
+}
+    .section.pricing .list .item{
+        float: none;
+        text-align: left;
+    }
+    .section.section_downald {
+        padding: 20px 0;
+    }
+    .section.footer .heading {
+        margin-bottom: 1em;
+        margin-top: 30px;
+    }
+}

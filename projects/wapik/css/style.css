@@ -1,0 +1,570 @@
+
+/* font-family: "RobotoRegular"; */
+
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "RobotoLight"; */
+
+@font-face {
+    font-family: "RobotoLight";
+    src: url("../fonts/RobotoLight/RobotoLight.eot");
+    src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "RobotoMedium"; */
+
+@font-face {
+    font-family: "RobotoMedium";
+    src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+    src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"), url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "RobotoBold"; */
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/RobotoBold/RobotoBold.eot");
+    src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    font-family: RobotoRegular;
+    font-size: 16px;
+    min-width:724px;
+}
+
+.h-01 {
+    font-size: 38px;
+}
+
+.copy-02 {
+    font-size: 16px;
+}
+
+.section {
+    padding: 100px 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.section.header {
+    padding: 0;
+    background-image: url(../images/Layer-14.png);
+    color: white;
+}
+
+.section.header .section.blue-fon {
+    background-color: rgba(45, 110, 112, 0.9);
+    padding: 0 0 170px 0;
+}
+
+.section.header .container .headline {
+    text-align: left;
+}
+
+.section.header .headline .h-01 {
+    margin-top: 4em;
+    margin-bottom: 0.5em;
+    font-weight: 200;
+}
+
+.section.header .headline {
+    max-width: 550px;
+}
+
+.section.header .headline .copy-02 {
+    font-weight: 100;
+    margin-bottom: 2em;
+}
+
+.section.header .headline .btn {
+    font-size: 14px;
+    font-family: RobotoMedium;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    background: #6fb048;
+    padding: 15px 50px;
+    border-radius: 2px;
+}
+
+.section.header .header__navbar {
+    width: 100%;
+    padding: 20px 0 90px 0;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) -20%, rgba(255, 255, 255, 0));
+    background: linear-gradient(top, rgba(0, 0, 0, 0.5) -20%, rgba(255, 255, 255, 0));
+}
+
+.section.header .header__navbar .container {
+    padding-bottom: 20px;
+    border-bottom: solid rgba(255, 255, 255, 0.2) 1px;
+}
+
+.section.header .header__navbar .container .navigation-block {
+    float: right;
+}
+
+.section.header .header__navbar .h-01,
+.section.header .header__navbar .copy-02 {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    float: left;
+}
+
+.section.header .header__navbar .h-01 {
+    font-size: 27px;
+    font-family: RobotoBold;
+    padding-right: 20px;
+    line-height: 22px;
+    border-right: solid rgba(255, 255, 255, 0.2) 1px;
+}
+
+.section.header .header__navbar .copy-02 {
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+.section.header .header__navbar .copy-02.phone-number:before {
+    content: url(../images/Phone.png);
+    display: inline-block;
+    padding: 3px 8px;
+}
+
+.section.header .header__navbar .copy-02.navigation,
+.section.header .header__navbar .btn {
+    float: right;
+    color: rgba(255, 255, 255, 0.7);
+    box-sizing:padding-box;
+    padding: 5px 10px;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+.section.header .header__navbar .copy-02.navigation.active {
+    color: white;
+}
+
+.section.header .header__navbar .btn {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.section.about h1,
+.section.description-1 h1 {
+    font-size: 32px;
+    font-weight: 300;
+    color: #0f5f5c;
+    font-family: RobotoLight;
+}
+
+.section.about .copy-02,
+.section.description-1 .copy-02 {
+    font-weight: 400;
+    color: #83a7a5;
+}
+
+.section.about .copy-02.col-md-6{
+    float: none;
+    margin: 0 auto 60px auto;
+}
+
+.section.about aside {
+    padding: 0 40px;
+    margin-bottom: 60px;
+}
+
+.section.about aside .heading {
+    font-weight: 400;
+    font-size: 16px;
+    color: #0f5f5c;
+}
+
+.section.about aside .copy-02 {
+    text-align: justify;
+    font-size: 14px;
+}
+
+.section.about aside .icon {
+    width: 52px;
+    height: 52px;
+}
+
+.section.about .separator img {
+    float: none;
+}
+
+.section.about .separator {
+    margin-bottom: 50px;
+}
+
+.section.about aside.col-md-6 * {
+    float: left;
+    margin: 5px 15px;
+}
+
+.section.about aside.col-md-6 img {
+    height: 32px;
+}
+
+.section.description-1 {
+    background: #eef1ec;
+    padding-bottom: 0;
+}
+
+.section.description-1 .heading {
+    font-size: 32px;
+    color: #0f5f5c;
+    text-align: left;
+    font-family: RobotoLight;
+}
+.section.description-1 .copy-02.col-md-6 {
+    margin:0 auto 60px auto;
+    float: none;
+}
+
+.section.description-1 aside.features {
+    padding-top: 100px;
+}
+
+.section.description-1 aside.features .copy-02 {
+    font-size: 14px;
+    color: #83a7a5;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.section.description-1 aside.features ul.copy-02 {
+    margin-left: -10px;
+    list-style: url(../images/oK.png);
+}
+
+.section.description-2 aside.text {
+    text-align: left;
+    padding-top: 70px;
+}
+
+.section.description-2 aside.text p.heading {
+    font-family: RobotoLight;
+    font-size: 22px;
+    color: #83a7a5;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+}
+
+.section.description-2 aside.text p.name {
+    font-size: 14px;
+    color: #6fb048;
+    font-family: RobotoMedium;
+}
+
+.section.description-3 {
+    background: #eef1ec url(../images/earth.png) no-repeat right;
+    padding-bottom: 150px;
+}
+
+.section.description-3 aside.text {
+    text-align: left;
+    padding-top: 70px;
+    clear: both;
+}
+
+.section.description-2 aside.text p.status {
+    font-size: 14px;
+    color: #83a7a5;
+}
+
+.section.description-3>.container{
+/*
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto !important;
+    margin-right: 0;
+    padding-right: 0;
+*/
+}
+.section.description-3 aside.text p.heading {
+    font-size: 32px;
+    color: #0f5f5c;
+    font-family: RobotoLight;
+}
+
+.section.description-3 aside.text p.copy-02 {
+    font-size: 14px;
+    color: #83a7a5;
+}
+
+.section.description-3 img.earth-map {
+/*
+    right: 0px;
+    position: relative;
+    float: right;
+*/
+}
+
+.section.pricing aside.text p.heading {
+    font-size: 32px;
+    color: #0f5f5c;
+    font-family: RobotoLight;
+}
+
+.section.pricing aside.text p.copy-02 {
+    font-size: 15px;
+    color: #83a7a5;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.section.pricing .plan-table {
+    width: 700px;
+    margin: auto;
+}
+
+.section.pricing .plan-table td {
+    padding: 20px;
+}
+
+.section.pricing .plan-table .heading {
+    font-size: 15px;
+    color: #6fb048;
+    text-transform: uppercase;
+    font-family: RobotoBold;
+}
+
+.section.pricing .plan-table .price {
+    font-size: 60px;
+    font-family: RobotoBold;
+    color: #0f5f5c;
+    margin-bottom: -0.2em;
+}
+
+.section.pricing .plan-table .description {
+    margin-top: 0px;
+    font-size: 14px;
+    color: #0f5f5c;
+    margin-bottom: 2em;
+    font-family: RobotoBold;
+}
+
+.section.pricing .plan-table .features {
+    font-size: 14px;
+    color: #83a7a5;
+    margin-bottom: 0.5em;
+}
+
+.section.pricing .plan-table .btn {
+    margin-top: 1.5em;
+    font-size: 13px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    color: #ffffff;
+}
+
+.section.pricing .plan-table .basic .btn {
+    background: #83a7a5;
+}
+
+.section.pricing .plan-table .plus .btn {
+    background: #6fb048;
+}
+
+.section.pricing .plan-table .premium .btn {
+    background: #83a7a5;
+}
+
+.section.pricing .heading.h-01 {
+    font-size: 22px;
+    color: #0f5f5c;
+    margin-top: 3em;
+}
+
+.section.pricing .list {
+    font-size: 14px;
+    color: #83a7a5;
+    padding: 30px 50px 80px 50px;
+}
+
+.section.pricing .list .item {
+    float: left;
+    margin-left: -10px;
+    list-style: url(../images/oK.png);
+    margin-bottom: 10px;
+}
+
+.section.pricing .contact-inf>.heading {
+    font-size: 32px;
+    color: #6fb048;
+    font-family: RobotoLight;
+}
+
+.section.pricing .contact-inf>.copy-02 {
+    font-size: 15px;
+    color: #83a7a5;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.section.pricing .contact-inf>.link {
+    font-size: 18px;
+    color: #0f5f5c;
+}
+
+.section.section_downald {
+    background: url(images/background.png);
+    padding: 40px 0;
+    max-height:200px;
+}
+
+.section.section_downald>.container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
+}
+
+.section.section_downald .text {
+    text-align: left;
+}
+
+.section.section_downald .text .h-01 {
+    font-size: 28px;
+    color: #0f5f5c;
+}
+
+.section.section_downald .text .copy-02 {
+    font-size: 15px;
+    color: #83a7a5;
+}
+
+.section.section_downald .wrapper_button .btn {
+    font-size: 13px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    color: #ffffff;
+    background: #6fb048;
+}
+
+.section.footer {
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 13px;
+    color: #83a7a5;
+}
+
+.section.footer .bottom-line {
+    border-bottom: solid 1px #eef1ec;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+.section.footer .heading {
+    font-size: 13px;
+    color: #0f5f5c;
+    font-family: RobotoBold;
+    margin-bottom: 20px;
+}
+
+.section.footer .heading.heading_wapik {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.section.footer .list {
+    list-style: none;
+    padding: 0;
+}
+
+.section.footer .list .item {
+    margin-bottom: 1em;
+}
+
+.section.footer .list .item .link_wapik {
+    color: #0f5f5c;
+}
+
+.section.footer .list .item .item__link {
+    color: #83a7a5;
+}
+
+.section.footer #subscribe {
+    margin-top: 30px;
+}
+
+.section.footer #subscribe>#email {
+    border: none !important;
+    background-color: #eef1ec;
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 13px;
+}
+
+.section.footer #subscribe .btn {
+    background-color: #eef1ec;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.section.footer #subscribe .btn:hover i{
+    color: #1faf79;
+}
+
+.section.footer .text {
+    float: left;
+}
+
+.section.footer .social-links {
+    float: right;
+}
+.link{
+    text-decoration: none !important;
+}
+.link:hover{
+  opacity: 0.7;
+}
+.btn:hover{
+    opacity: 0.9;
+}

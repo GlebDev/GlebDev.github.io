@@ -1,0 +1,498 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* ЕТо ненужний код*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+div{
+    display:block;
+}
+
+
+
+
+
+
+
+/*header*/
+body{
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+}
+#bady2{
+}
+.bg {
+  background: url('images/Holl.jpg') no-repeat 50% 0;
+  position: fixed;
+  width: 100%;
+  height: 300%;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+#bady{
+    width: 1200px;
+    margin: 0 auto;
+    padding:0 10px;
+    padding-bottom: 30px;
+}
+
+#menu{
+    height: 80px;
+    width: 1200px;
+    display: block;
+     background: #000;
+
+}
+#menu ul{
+    margin: 0 auto;
+    width: 1000px;
+    display: block;
+}
+#menu ul li{
+    float: left;
+    list-style-type: none;
+     height: 80px;
+     background: #fff;
+}
+#menu ul li a,#vhod a{
+    text-decoration: none;
+    color:#fff;
+    padding:0 10px;
+    font-size:14px;
+    line-height: 80px;
+    display:block;
+    height: 80px;
+    font-weight:bold;
+    background: #000;
+	transition: .1s linear;
+}
+#menu ul li a:hover{
+ height: 75px;
+}
+#vhod{
+ float:right;
+    display: block;
+    height: 80px;
+	background:#fff;
+}
+#vhod a img{
+    margin-right: 5px;
+    margin-bottom: -3px;
+}
+#vhod a:hover{
+  height: 75px;
+}
+/*page*/
+#page{
+    width:  940px;
+    height: 800px;
+    margin: 0 auto;
+}
+.logo{
+    margin:57px auto;
+    text-align:center;
+}
+
+.features{
+    padding:0;
+    margin:50px 0;
+    list-style:none;
+    color:#fff;
+}
+    .features li{
+        width:300px;
+        margin-left:20px;
+        float:left;
+        text-align:center;
+}
+    .features li:first-child {
+        margin-left:0;
+}
+        .feature-title{
+            position:relative;
+            font-size:29px;
+            font-weight:bold;
+            margin-bottom:80px;
+}
+       .feature-title:after{
+            content:"";
+            position:absolute;
+            bottom:-50px;
+            left:50%;
+            margin-left:-15px;
+            width:25px;
+            height:25px;
+            background:url(images/romb.png) no-repeat 0 0;
+}
+.index-section{
+    margin:30px 0;
+    padding:45px 80px;
+    background:#fdfaf7;
+    position: relative;
+    display: block;
+}
+.index-section-title{
+                font-size:30px;
+                line-height:42px;
+                margin-bottom:23px;
+        }
+    .index-left-column{
+        position:relative;
+        float:left;
+        width:340px;
+        padding-right:20px;
+    }
+    .index-left-column:after{
+        content:"";
+        position:absolute;
+        left:110%;
+        top:50%;
+        margin-top:-139px;
+        width:8px;
+        height:278px;
+        background:url no-repeat 0 0;
+    }
+        .index-news{
+            display:block;
+            margin:0;
+            padding:0;
+            list-style:none;
+            margin-bottom:30px;
+        }
+        .index-contacts{
+            display:block;
+            margin:0;
+            padding:0;
+            list-style:none;
+            margin-bottom:35px;
+        }
+            .index-news li,
+            .index-contacts li{
+                margin-bottom:23px;
+            }
+            .index-news a{
+                text-decoration:none;
+                color:#000;
+            }
+        .index-news .date{
+            font-family:Georgia, Times, serif;
+            font-weight:normal;
+            font-style:italic;
+            text-transform:lowercase;
+        }
+    .index-right-column {
+        float:right;
+        width:350px;
+    }
+		.gallery{
+			position: relative;
+            height: 200px;
+			width: 100%;
+			overflow: hidden;
+			float: left;		   /*hides every child object that will overlap it's parent*/
+            margin-bottom: 35px;
+
+		}
+        #slides{
+			height:200px;
+			position:relative;
+        }
+			 #slydes:after{
+				content:"";}
+		.slide {
+			display:inline;
+			float:left;
+			width: 350px;
+			height: 200px;
+ 		}
+            .img{
+				height: 100%;
+              width: 100%;
+			 margin:0 auto;
+
+
+            }
+        .index-right-column p{
+            margin-bottom:20px;
+        }
+        .index-form input[type="submit"]{
+            width:99%;
+			font-weight: bold;
+            padding:12px 0;
+            border:none;
+            color:white;
+            background-color:#000;
+            text-transform:uppercase;
+            cursor:pointer;
+			transition: .2s linear;
+        }
+        .index-form input[type="submit"]:hover{
+            background-color:#1d1d1d;
+        }
+        fieldset{
+            border:0;
+            padding:0;
+            margin:0;
+            margin-bottom:25px;
+        }
+        .index-form input[type="text"]{
+            display:inline-block;
+            width:39%;
+            margin-right:6px;
+            margin-bottom:18px;
+            height: 30px;
+            font-size:15px;
+            line-height: 30px;
+            padding: 5px 10px;
+            border: 2px solid #000;
+            color: #000;
+			font-weight: bold;
+            text-transform: uppercase;
+        }
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.btn{
+   display:inline-block;
+    width:49%;
+    margin:0;
+    padding:0;
+    border:0;
+    background:#000;
+    color:#fff;
+    font-family:arial;
+    font-size:14px;
+    font-weight:bold;
+    text-decoration:none;
+    text-align:center;
+    line-height: 43px;
+    cursor:pointer;
+	transition: .2s linear;
+}
+.btn:hover {
+background:#1d1d1d;
+}
+.page-footer {
+    margin-top:65px;
+    padding:50px 0;
+	bottom:0px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+    background:#101010;
+    color:#fff;
+}
+    .contacts-address{
+        width: 300px;
+        float: left;
+    }
+    .social-buttons {
+        text-align:center;
+        width:350px;
+        float:left;
+
+    }
+        .social-buttons span{
+            display:block;
+            margin-bottom:5px;
+        }
+        .btn-social{
+            display:inline-block;
+
+            text-shadow:none;
+            color:transparent;
+            background:#000 url(images/sprite.png) ;
+            width:43px;
+            height:43px;
+            margin-right:5px;
+            line-height:40px;
+        }
+        .vk{background-position: -103px -201px;transition: .2s linear;}
+        .vk:hover{background-color:#101010; background-position: -103px -201px;}
+        .fb{background-position:-2px -2px;transition: .2s linear;}
+        .fb:hover{background-color:#101010;background-position:-2px -2px;}
+        .in{background-position: -103px -152px;transition: .2s linear;}
+        .in:hover{background-color:#101010;background-position: -103px -152px;}
+    .design{
+        width:140px;
+        float:right;
+        text-align:center;
+    }
+        .footer-btn{
+            margin-top:5px;
+			transition: .2s linear;
+        }
+        .footer-btn:hover{
+            background:#101010;
+        }
+#foot{
+    width:940px;
+    margin:0 auto;
+    padding:0 10px;
+}
+/*login enter menu*/
+.login-menu{
+	display: none;
+	min-height:200px;
+
+    top:50%;
+	margin-top: -180px;
+	left: 50%;
+	position: absolute;
+    transform: translateX(-50%);
+    width:300px;
+    padding: 50px 80px;
+    background:rgba(255, 255, 255, 0.9);
+}
+.fon{
+	display: none;
+	top: -10%;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+@keyframes fon-open{
+    0%   { transform: translateY(-2000px); }
+    60%  { transform: translateY(60px);    }
+    80%  { transform: translateY(-10px);   }
+    100% { transform: translateY(0);    }
+}
+@keyframes fon-eror {
+    0%   { background:rgba(1, 0, 0, 0.6); }
+    50%  { background:rgba(250, 0, 0, 0.8); }
+	100% { background:rgba(1, 0, 0, 0.6); }
+		}
+
+
+.fon-error {
+	display: block;
+	width: 100%;
+	height: 110%;
+    animation: fon-eror 0.4s;
+}
+.login-show {
+	display: block;
+}
+.fon-show {
+	display: block;
+	width: 100%;
+	height: 110%;
+	animation: fon-open 0.4s;
+	overflow: hidden;
+
+}
+.fon-show-passive {
+	display: block;
+	width: 100%;
+	height: 110%;
+	overflow: hidden;
+
+
+
+}
+.blur{
+	  -webkit-filter: url("#blur");
+  -webkit-filter: blur(2px);
+}
+.login-form{
+    font-weight:bold;
+    font-size:14px;
+}
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="submit"]{
+    display:block;
+    font-weight:bold;
+    font-size:14px;
+}
+.login-form input[type="text"],
+.login-form input[type="password"]{
+    width:241px;
+    margin-bottom:10px;
+    padding:10px 15px;
+    padding-right:40px;
+    border:2px solid #000;
+    color:#000;
+}
+.login-form input[type="password"]{
+    margin-bottom:15px;
+}
+.login-form .restore{
+    float: right;
+    color: #000;
+}
+.login-form input[type="checkbox"]{
+    vertical-align: middle;
+    margin-right: 1px;
+}
+.login-form input[type="submit"]{
+    width: 300px;
+    margin-top: 15px;
+    padding: 14px 0;
+    border: none;
+    color: white;
+    background-color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
+	transition: .2s linear;
+}
+.login-form input[type="submit"]:hover{
+	background:#1d1d1d;
+}
+.login-close{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+	cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
