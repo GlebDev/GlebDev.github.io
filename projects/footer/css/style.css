@@ -1,0 +1,72 @@
+
+.b-page {
+    margin: 0;
+    font-family: sans-serif;
+    min-width: 622px;
+}
+.b-page__section_footer{
+    margin-top: 500px;
+}
+.b-clocks-section{
+    background-color: #f4f4f4;
+    padding:50px 0;
+}
+.b-clock-block{
+    text-align: center;
+}
+.b-clock__clock-image{
+    width: 80px;
+}
+.b-clock__title,.b-clock__degrees {
+    margin:0.2em 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #5f5f5f;
+    text-transform: uppercase;
+}
+.b-footer{
+    background-color: #232323;
+    padding:30px 0 100px 0;
+    color: #e2e2e2 !important;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.b-footer a{
+color: #e2e2e2 !important;
+}
+.b-links-wrapper {
+    border-bottom: 1px solid #414141;
+}
+.b-footer-links{
+    min-width: 140px;
+    margin-right: 20px;
+    list-style: none;
+    float: left;
+
+}
+.b-footer-links>li{
+    height: 28px;
+}
+.b-footer-links_logo{
+        float: right;
+}
+.b-social-links-wrapper{
+    padding: 18px 0 0 0;
+}
+.b-righs{
+  font-size: 9px;
+  color: #6c6c6c;
+    float: left;
+}
+.b-footer-social-links{
+    min-width: 140px;
+    margin-right: 20px;
+    list-style: none;
+    float: right;
+}
+.b-footer-social-links>li{
+    height: 28px;
+    float: right;
+}
+
