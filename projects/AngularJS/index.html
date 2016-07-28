@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='phonecatApp'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" container="IE=edge">
+    <meta name="viewport" container="width=device-width, initial-scale=1">
+    <title>Angular</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.30/angular.min.js"></script>
+    <script src="js/controllers.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body ng-controller="PhoneListCtrl">
+    <section class="test container">
+        <div class="row">
+           <h1>{{title}}</h1>
+           <input type="text" ng-model="query">
+            <ul>
+                <li ng-repeat="phone in filterFun = (phones | filter:doneAndFilter)">
+                    <span>{{phone.name}}</span>
+                    <p>
+                        {{phone.snippet}}</br>
+                        {{phone.status}}</br>
+                        {{phone.priority}}
+                    </p>
+                </li>
+            </ul>
+            <p>the number of all phones {{filterFun.length}}</p>
+            <p>{{today | date:'dd.MM.yyyy'}}</p>
+            <ul>
+                <li>Json: <pre>{{{'text':'text', 'text2':'text text'} | json}}</pre></li>
+            </ul>
+
+            <hr>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th >
+                            <a href="" ng-click="sort('name')">
+                                Name
+                                <i class="glyphicon" ng-class="{'glyphicon-chevron-up' : isSortUp('name'),
+                                                                'glyphicon-chevron-down' : isSortDown('name')}">
+                                                                </i>
+                            </a>
+                        </th>
+                        <tbody>
+                            <tr ng-repeat="phone in phones | orderBy:sortField:reverse">
+                                <td>{{phone.name}}</td>
+                            </tr>
+                        </tbody>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+
+</html>

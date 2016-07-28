@@ -1,0 +1,19 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/fontOpenSans.ttf);
+}
+
+@font-face {
+    font-family: OpenSansLight;
+    src: url(../fonts/fontOpenSansLight.ttf);
+}
+        /*CSS RESET*/
+body {
+	margin: 0;
+    font-family: OpenSans;
+    background-color: #8FA8F6;
+}
+.test{
+    padding:30px 0 ;
+    position: relative;
+}
