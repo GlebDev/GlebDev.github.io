@@ -11,20 +11,6 @@ phonecatApp.controller("PhoneListCtrl",function($scope,$http){
     }).error(function(){
 
     });
-    $scope.phones = [
-        {'name' : 'Nexus S',
-        'snippet':'Lorem ipsum dolor sit amet, consectetur adipisicing.',
-        'status':true,
-        'priority':'1'},
-        {'name' : 'Motorola X00M™ with WI-FI',
-        'snippet' : 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
-        'status':false,
-        'priority':'2'},
-        {'name' : 'Motorola X00M™',
-        'snippet' : 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
-        'status':true,
-        'priority':'3'}
-    ];
     $scope.title = "Phones";
     var date = new Date();
     $scope.today = date;
