@@ -7,6 +7,7 @@ var phonecatApp = angular.module('phonecatApp',[]);
 phonecatApp.controller("PhoneListCtrl",function($scope,$http){
     $http.get('phones/phones.json').success(function(data,status,headers,config){
         console.log('This is Data:',data,'\n\n This is Status:',status,'\n\n This is Headers:',headers,'\n\n This is Config:',config);
+        $scope.phones = data;
     }).error(function(){
 
     });
